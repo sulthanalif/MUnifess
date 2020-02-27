@@ -27,13 +27,13 @@ def start():
                                 print("DM will be posted with media")
                                 print(dms[i]['shorted_media_url'])
                                 tw.post_tweet_with_media(message, dms[i]['media'],dms[i]['shorted_media_url'])
-                                
+                                tw.delete_dm()
                         else:
                             print("DM its empty..")
-                            
+                            tw.delete_dm()
                     else:
                         print("DM does not contains keyword..")
-                        t
+                        tw.delete_dm()
 
             dms = list()
 
