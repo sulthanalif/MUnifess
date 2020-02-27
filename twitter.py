@@ -54,10 +54,10 @@ class Twitter:
         print("Deleting dm with id = "+ str(id))
         try:
             self.api.destroy_direct_message(id)
-            time.sleep(40)
+            time.sleep(20)
         except Exception as ex:
             print(ex)
-            time.sleep(40)
+            time.sleep(20)
             pass
 
     def post_tweet(self, tweet):
