@@ -48,18 +48,7 @@ class Twitter:
         except Exception as ex:
             print(ex)
             time.sleep(30)
-            pass
-
-
-    def delete_dm(self, id):
-        print("Deleting dm with id = "+ str(id))
-        try:
-            self.api.destroy_direct_message(id)
-            time.sleep(30)
-        except Exception as ex:
-            print(ex)
-            time.sleep(30)
-            pass
+            pass     
 
 
     def post_tweet(self, tweet):
