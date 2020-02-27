@@ -1,7 +1,7 @@
 from twitter import Twitter
 import time
 
-
+#hahahahahaahahahahahah
 
 tw = Twitter()
 
@@ -23,17 +23,16 @@ def start():
                                 print("DM will be posted")
                                 tw.post_tweet(message)
                                 tw.delete_dm(id)
-                               
                             else:
                                 print("DM will be posted with media")
                                 print(dms[i]['shorted_media_url'])
                                 tw.post_tweet_with_media(message, dms[i]['media'],dms[i]['shorted_media_url'])
                                 tw.delete_dm(id)
                         else:
-                            print("DM its empty..")
+                            print("DM deleted because its empty..")
                             tw.delete_dm(id)
                     else:
-                        print("DM does not contains keyword..")
+                        print("DM will be deleted because does not contains keyword..")
                         tw.delete_dm(id)
 
             dms = list()
